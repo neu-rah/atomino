@@ -1,12 +1,12 @@
 {
   "name": "atomino",
   "main": "./lib/atomino",
-  "version": "0.0.1",
-  "private": true,
-  "description": "Arduino-Cosa integration",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Atom Editor Arduino-Cosa integration",
   "keywords": [
   ],
-  "repository": "https://github.com/atom/atomino",
+  "repository": "https://github.com/neu-rah/Atomino",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
