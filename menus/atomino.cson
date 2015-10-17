@@ -1,0 +1,20 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle atomino'
+      'command': 'atomino:toggle'
+    }
+  ]
+'menu': [
+  {
+    label: 'Atomino'
+    submenu: [
+      {label: 'Compile and Upload', command: 'atomino:compile'}
+      {label: 'Serial monitor', command: 'atomino:monitor'}
+      {label: 'List supported boards', command: 'atomino:cosaBoards'}
+      {label: 'Show board configuration', command: 'atomino:cosaConfig'}
+      {label: 'Remove all generated files', command: 'atomino:cosaClean'}
+    ]
+  }
+]

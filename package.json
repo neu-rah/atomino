@@ -1,0 +1,35 @@
+{
+  "name": "atomino",
+  "main": "./lib/atomino",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Arduino-Cosa integration",
+  "keywords": [
+  ],
+  "repository": "https://github.com/atom/atomino",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.1.0",
+    "package-dependencies": "latest"
+  },
+  "package-dependencies": {
+    "tool-bar": "^0.1.0",
+    "console-panel":"^0.2.0",
+    "terminal-plus":"^0.9.0"
+  },
+  "consumedServices": {
+    "console-panel": {
+      "versions": {
+        "^1.0.0": "consumeConsolePanel"
+      }
+    },
+    "tool-bar": {
+      "versions": {
+        "^0.1.0": "consumeToolBar"
+      }
+    }
+  }
+}
