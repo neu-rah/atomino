@@ -6,6 +6,8 @@ Embryonic package for AVR/Arduino programming, its tested only on linux Ubuntu a
 
 Cosa: http://cosa-arduino.blogspot.pt/
 
+Cosa on github: https://github.com/mikaelpatel/Cosa
+
 Atomino:
 
 http://www.r-site.net
