@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": false,
   "description": "Atom Editor Arduino-Cosa integration",
-  "keywords": [],
+  "keywords": ["Arduino","AVR","Cosa","Hardware","Firmware","Burn","Upload"],
   "repository": "https://github.com/neu-rah/Atomino",
   "license": "MIT",
   "engines": {
