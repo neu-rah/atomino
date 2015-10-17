@@ -3,9 +3,7 @@ AtominoView = require './atomino-view'
 {CompositeDisposable} = require 'atom'
 apd = require 'atom-package-dependencies'
 apd.install
-#term=apd.require 'terminal-plus'
 
-#atom.apd=apd
 module.exports = Atomino =
   atominoView: null
   modalPanel: null
@@ -97,13 +95,6 @@ module.exports = Atomino =
     @subscriptions.add atom.commands.add 'atom-workspace', 'atomino:settings': => @settings()
     @subscriptions.add atom.commands.add 'atom-workspace', 'atomino:debug': => @atomino_debug()
 
-    ###{$} = require 'atom-space-pen-views'
-
-    editorView = atom.views.getView(editor)
-    $(editorView).on 'mouseup', (event) ->
-      if event.which is 3
-        console.log 'right click'###
-
   consumeConsolePanel: (@consolePanel) ->
   log: (message) ->
     @consolePanel.log(message)
@@ -159,17 +150,6 @@ module.exports = Atomino =
       callback: 'atomino:cosaConfig'
       tooltip: 'Show board configuration'
 
-      # Disable button
-      #button.setEnabled false
-
-    # Function with data in callback
-    ###@toolBar.addButton
-      icon: 'alert',
-      callback: (data)->
-        alert data
-      tooltip: 'Show Alert'
-      data: 'foo'###
-
   deactivate: ->
     @toolBar?.removeItems()
     @modalPanel.destroy()
@@ -208,8 +188,6 @@ module.exports = Atomino =
     console.log "initBoards:",stdout.split("\t").join("+"),stderr
     boards=(stdout+"").split("\n");
     console.log boards.length+" boards"
-    #module.exports.config.cosaBoard.enum=boards
-    #atom.config.set 'atomino.cosaBoard',''
     atom.packages.getActivePackage('atomino').mainModule.config.cosaBoard= {type:'string',default:'',enum:boards}
 
   cosa: (src,board,params) ->
@@ -240,7 +218,6 @@ module.exports = Atomino =
     @consolePanel.warn("WARN")
     @consolePanel.notice("NOTICE")
     @consolePanel.debug("DEBUG")
-    #atom.config.unset 'atomino.Programmer'
     #atom.packages.getActivePackage('atomino').mainModule.config.test={type:'string',default:'ok',enum:['ok','cancel']}
 
   compile: ->
@@ -249,5 +226,3 @@ module.exports = Atomino =
     cfg=atom.config.get("atomino")
     board=cfg.cosaBoard.split("Cosa")
     @cosa path, board[0].trim(), (@mkParam "ispload ISP_PORT=",cfg.programmer) + cfg.options
-    #@cosa path, board[0].trim(), (if cfg.programmer then " ispload ISP_PORT="+cfg.programmer else "") + (if cfg.monitor then " monitor MONITOR_PORT="+cfg.programmer else "")+cfg.options
-    #@cosa atom.project.getPaths()[0], "atmega328-8", "ispload ISP_PORT=/dev/ttyUSB0"
