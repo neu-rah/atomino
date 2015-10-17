@@ -14,4 +14,4 @@ http://www.r-site.net
 
 ruihfazevedo@gmail.com
 
-![A screenshot of your package](https://raw.githubusercontent.com/neu-rah/Atomino/master/resources/Atomino.png)
+![A screenshot of your package](https://raw.githubusercontent.com/neu-rah/Atomino/master/resources/atomino_small_loop.png)
