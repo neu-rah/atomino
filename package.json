@@ -24,7 +24,7 @@
   "package-dependencies": {
     "tool-bar": "^0.1.0",
     "console-panel": "^0.2.0",
-    "terminal-plus": "^0.9.0"
+    "file-types": "^0.5.1"
   },
   "consumedServices": {
     "console-panel": {

@@ -192,7 +192,9 @@ module.exports = Atomino =
 
   cosa: (src,board,params) ->
     exports=@mkExport "ARDUINO_DIR" + @mkExport "COSA_DIR"
-    return @shellRun "cd "+src+";"+exports+" cosa "+board+" "+params
+    cmdline=@shellRun "cd "+src+";"+exports+" cosa "+board+" "+params
+    @consolePanel.notice cmdline
+    return cmdline
 
   updateBoards: ->
     return @shellRun "cd "+atom.project.getPaths()[0]+"; cosa boards",@setBoards
@@ -225,4 +227,4 @@ module.exports = Atomino =
     @consolePanel.notice 'Cosa compiling:'+path
     cfg=atom.config.get("atomino")
     board=cfg.cosaBoard.split("Cosa")
-    @cosa path, board[0].trim(), (@mkParam "ispload ISP_PORT=",cfg.programmer) + cfg.options
+    @cosa path, board[0].trim(), (if cfg.programmer then (@mkParam "ispload ISP_PORT=",cfg.programmer) else "upload") + cfg.options
