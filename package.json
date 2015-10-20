@@ -18,13 +18,15 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "activationCommands": {
+    "atomino":"atomino:toggle"
+  },
   "dependencies": {
     "package-dependencies": "latest"
   },
   "package-dependencies": {
     "tool-bar": "^0.1.0",
-    "console-panel": "^0.2.0",
-    "file-types": "^0.5.1"
+    "console-panel": "^0.2.0"
   },
   "consumedServices": {
     "console-panel": {

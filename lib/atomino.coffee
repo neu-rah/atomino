@@ -112,7 +112,6 @@ module.exports = Atomino =
       callback: 'terminal-plus:new'
       tooltip: 'Serial monitor'
 
-    # Using custom icon set (Ionicons)
     button = @toolBar.addButton
       icon: 'gear-a'
       callback: 'atomino:settings'
