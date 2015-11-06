@@ -1,7 +1,7 @@
 {
   "name": "atomino",
   "main": "./lib/atomino",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "private": false,
   "description": "Atom Editor Arduino-Cosa integration",
   "keywords": [
@@ -19,7 +19,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "xactivationCommands": {
-    "atomino":"atomino:toggle"
+    "atomino": "atomino:toggle"
   },
   "dependencies": {
     "package-dependencies": "latest"
