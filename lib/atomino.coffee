@@ -1,8 +1,8 @@
 childProc = require 'child_process'
 AtominoView = require './atomino-view'
 {CompositeDisposable} = require 'atom'
-apd = require 'atom-package-dependencies'
-apd.install
+#apd = require 'atom-package-dependencies'
+#apd.install
 
 module.exports = Atomino =
   atominoView: null
