@@ -18,13 +18,6 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "xactivationCommands": {
-    "atomino": "atomino:toggle"
-  },
-  "dependencies": {
-    "tool-bar": "^0.1.0",
-    "console-panel": "^0.2.0"
-  },
   "consumedServices": {
     "console-panel": {
       "versions": {
