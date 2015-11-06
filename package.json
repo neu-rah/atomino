@@ -1,7 +1,7 @@
 {
   "name": "atomino",
   "main": "./lib/atomino",
-  "version": "0.4.3",
+  "version": "0.4.2",
   "private": false,
   "description": "Atom Editor Arduino-Cosa integration",
   "keywords": [
@@ -23,11 +23,13 @@
   },
   "packageDependencies": {
     "tool-bar": "0.1.9",
-    "console-panel": "0.2.0"
+    "console-panel": "0.2.0",
+    "terminal-plus": "0.9.0"
   },
   "package-dependencies": {
-    "tool-bar": "^0.1.9",
-    "console-panel": "^0.2.0"
+    "tool-bar": "0.1.9",
+    "console-panel": "0.2.0",
+    "terminal-plus": "0.9.0"
   },
   "consumedServices": {
     "console-panel": {

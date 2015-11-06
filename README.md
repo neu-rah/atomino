@@ -4,7 +4,7 @@ Arduino-Cosa integration with Atom editor
 
 Embryonic package for AVR/Arduino programming, its tested only on linux Ubuntu and most likely wont work on any other platform.
 
-This package depends on console-panel and tool-bar
+This package depends on console-panel, tool-bar and terminal-plus
 
 Cosa: http://cosa-arduino.blogspot.pt/
 
