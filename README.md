@@ -6,6 +6,10 @@ Embryonic package for AVR/Arduino programming, its tested only on linux Ubuntu a
 
 This package depends on console-panel, tool-bar and terminal-plus
 
+**install**
+
+    apm install atomino -g
+
 Cosa: http://cosa-arduino.blogspot.pt/
 
 Cosa on github: https://github.com/mikaelpatel/Cosa
