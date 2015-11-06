@@ -18,6 +18,13 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "dependencies": {
+    "atom-package-dependencies": "^1.0.3"
+  },
+  "package-dependencies": {
+    "tool-bar": "^0.1.9",
+    "console-panel": "^0.2.0"
+  },
   "consumedServices": {
     "console-panel": {
       "required": true,
