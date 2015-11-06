@@ -22,9 +22,6 @@
     "atomino": "atomino:toggle"
   },
   "dependencies": {
-    "package-dependencies": "latest"
-  },
-  "package-dependencies": {
     "tool-bar": "^0.1.0",
     "console-panel": "^0.2.0"
   },
