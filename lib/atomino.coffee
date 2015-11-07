@@ -1,8 +1,8 @@
 childProc = require 'child_process'
 AtominoView = require './atomino-view'
 {CompositeDisposable} = require 'atom'
-apd = require 'atom-package-dependencies'
-apd.install()
+#apd = require 'atom-package-dependencies'
+#apd.install()
 
 module.exports = Atomino =
   atominoView: null
@@ -75,7 +75,6 @@ module.exports = Atomino =
       ]
 
   activate: (state) ->
-    console.log "Atomino:activate"
     @atominoView = new AtominoView(state.atominoViewState)
     @modalPanel = atom.workspace.addModalPanel(item: @atominoView.getElement(), visible: false)
 
