@@ -1,7 +1,7 @@
 {
   "name": "atomino",
   "main": "./lib/atomino",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "private": false,
   "description": "Atom Editor Arduino-Cosa integration",
   "keywords": [
@@ -14,15 +14,16 @@
     "Upload"
   ],
   "repository": "https://github.com/neu-rah/Atomino",
+  "bugs":"https://github.com/neu-rah/Atomino/issues",
+  "author":"Rui Azevedo <ruihfazevedo@gmail.com>",
+  "contributors": [],
+  "homepage":"http://r-site.net",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "packageDependencies": {
-    "tool-bar": "0.1.9",
-    "console-panel": "0.2.0",
-    "terminal-plus": "0.13.1"
-  },
+  "dependencies": {"atom-package-deps": "^4.0.0"},
+  "package-deps": ["tool-bar","console-panel","terminal-plus"],
   "consumedServices": {
     "console-panel": {
       "activateProviders": true,

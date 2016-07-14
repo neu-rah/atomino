@@ -75,6 +75,11 @@ module.exports = Atomino =
       ]
 
   activate: (state) ->
+    require("atom-package-deps").install()
+      .then(
+        ()->console.log "dependencies installed",
+        ()->console.log "Dependencies failled install!"
+        )
     @atominoView = new AtominoView(state.atominoViewState)
     @modalPanel = atom.workspace.addModalPanel(item: @atominoView.getElement(), visible: false)
 
