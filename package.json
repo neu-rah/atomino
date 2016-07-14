@@ -1,7 +1,7 @@
 {
   "name": "atomino",
   "main": "./lib/atomino",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "private": false,
   "description": "Atom Editor Arduino-Cosa integration",
   "keywords": [
